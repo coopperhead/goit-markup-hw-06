@@ -269,8 +269,11 @@ img {
 }
 
 .modal-close-btn:hover,
-.modal-close-btn:focus {
+.modal-close-btn:focus,
+.modal-close-icon:hover,
+.modal-close-icon:focus {
   background-color: var(--accent-color);
+  fill: var(--white-color);
 }
 
 .modal-form {
@@ -311,10 +314,13 @@ img {
 
 .modal-input {
   width: 100%;
-  font-size: 18px;
+  font-size: 12px;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: border-color 2s cubic-bezier(0.075, 0.82, 0.165, 1);
   background-color: transparent;
   color: rgba(117, 117, 117, 0.5);
   transition: var(--hover-transition);
@@ -708,7 +714,6 @@ footer .text {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  outline: none;
 }
 
 .subscribe-btn {
@@ -734,8 +739,6 @@ footer .text {
 .subscribe-btn:focus {
   background-color: var(--accent-color);
 }
-
-
 
 .subscribe-btn-icon {
   margin-left: auto;
